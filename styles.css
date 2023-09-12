@@ -1,35 +1,56 @@
+/* Resetting some default styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
+
+/* Styling the header */
 header {
   background-color: #35424a;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+
+/* Styling the navigation */
 nav {
   background-color: #35424a;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 10px;
 }
+
+/* Styling the navigation links */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav ul li {
   display: inline;
   margin-right: 10px;
 }
+
+nav ul li a {
+  color: white;
+}
+
+/* Change the color of the links when hovered over */
+nav ul li a:hover {
+  color: #CCCCCC; /* Light gray color for hover effect */
+}
+
+/* Creating a container for content */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
+
+/* Styling individual course cards */
 .course-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -38,17 +59,25 @@ nav ul li {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
+
+/* Hover effect on course cards */
 .course-card:hover {
   transform: translateY(-5px);
 }
+
+/* Styling course title */
 .course-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
+/* Styling course description */
 .course-description {
   color: #777;
   margin-bottom: 10px;
 }
+
+/* Styling buttons */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -58,6 +87,19 @@ nav ul li {
   border-radius: 5px;
   transition: background-color 0.2s;
 }
+
+/* Hover effect on buttons */
 .btn:hover {
   background-color: #222;
+}
+
+/* Styling team members section */
+.team-member {
+  display: flex; /* Set display to flex */
+  align-items: center; /* Align items vertically */
+}
+
+/* Adding some space between the icon and the name */
+.name {
+  margin-left: 10px;
 }
