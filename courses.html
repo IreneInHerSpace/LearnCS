@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -26,14 +26,32 @@
     <div class="course-card">
       <h2 class="course-title">Introduction to Algorithms</h2>
       <p class="course-description">Explore the fundamental algorithms that power computer science.</p>
-      <a href="#" class="btn">Enroll Now</a>
+      <!-- Link to the PHP script that handles enrollment -->
+      <a href="enroll.php?course=1" class="btn">Enroll Now</a>
     </div>
+
     <div class="course-card">
       <h2 class="course-title">Web Development Basics</h2>
       <p class="course-description">Learn the essentials of web development, from HTML to CSS.</p>
-      <a href="#" class="btn">Enroll Now</a>
+      <!-- Link to the PHP script that handles enrollment -->
+      <a href="enroll.php?course=2" class="btn">Enroll Now</a>
     </div>
-    <!-- More course cards can be added here -->
-  </div>
+
+    <!-- ... add more course cards as needed ... -->
+
+    <!-- Add the enrollment form here -->
+<div class="enrollment-form">
+    <h2>Enroll Now</h2>
+    <form action="enroll.php" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" name="student_id" pattern="[0-9]+" required><br>
+
+        <label for="course_id">Course ID:</label>
+        <input type="text" name="course_id" pattern="[0-9]+" required><br>
+
+        <input type="submit" value="Enroll">
+    </form>
+</div>
+
 </body>
 </html>
